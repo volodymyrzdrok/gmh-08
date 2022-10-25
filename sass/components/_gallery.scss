@@ -1,0 +1,33 @@
+.gallery {}
+
+.gallery__title {}
+
+.gallery__list {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+}
+
+.gallery__item {
+   flex-basis: calc((100% - 60px) / 3);
+   position: relative;
+}
+
+.gallery__overlay {
+   position: absolute;
+   background: rgba(47, 48, 58, 0.8);
+   padding: 27px 0;
+   bottom: 0;
+   width: 100%;
+}
+
+.gallery__text {
+   line-height: 1.2;
+   text-align: center;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   font-weight: 700;
+   color: $bc-color;
+}
+
+.gallery__img {}
