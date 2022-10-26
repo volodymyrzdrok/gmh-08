@@ -208,9 +208,11 @@
   transform: translateY(-100%);
   transition: transform $animation;
 
-  // @media (min-width: 768px) {
-  //   display: none;
-  // }
+  @media (min-width: 768px) {
+    &* {
+      display: none;
+    }
+  }
 }
 
 .menu-container.is-open {
