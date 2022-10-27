@@ -1,37 +1,33 @@
-
-@mixin centeredFlex($displ : flex,$jusCon:center,$aliIte: center){
-display: $displ;
-   justify-content: $jusCon;
-   align-items: $aliIte;
+@mixin centeredFlex($displ: flex, $jusCon: center, $aliIte: center) {
+  display: $displ;
+  justify-content: $jusCon;
+  align-items: $aliIte;
 }
 
-@mixin logoCommons($color){
-color: $color;
-letter-spacing: 0.03em;
-font-family: 'Raleway', sans-serif;
-font-size: 24px;
-line-height: calc(38/ 24);
+@mixin logoCommons($color) {
+  color: $color;
+  letter-spacing: 0.03em;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  line-height: calc(28 / 24);
 
-@media (min-width:1200px) {
-   font-size: 26px;
-   line-height: calc(31/ 26);
-   }
+  @media (min-width: 1200px) {
+    font-size: 26px;
+    line-height: calc(31 / 26);
+  }
 }
 
-@mixin buttuns($bCol : #188ce8,$col : $bc-color){
-   background-color: $bCol;
-      color: $col;
-      height: 50px;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: calc(30 / 16);
-      letter-spacing: 0.06em;
-      font-family: inherit;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color $animation, box-shadow $animation;
-
-
-
+@mixin buttuns($bCol: #188ce8, $col: $bc-color) {
+  background-color: $bCol;
+  color: $col;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  font-family: inherit;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color $animation, box-shadow $animation;
 }

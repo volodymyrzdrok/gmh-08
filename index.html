@@ -123,13 +123,13 @@
       </div>
     </header>
     <main>
-      <!-- <section class="banner">
+      <section class="banner">
         <div class="container">
           <h1 class="banner__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="banner__but" data-modal-open type="button">Замовити послугу</button>
         </div>
-      </section> -->
-      <!-- <section class="post">
+      </section>
+      <section class="post">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="post-list">
@@ -179,15 +179,16 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="gallery section">
+      </section>
+      <section class="gallery section">
         <div class="container">
           <h2 class="gallery__title section__title">Чим ми займаємось</h2>
           <ul class="gallery__list">
             <li class="gallery__item">
               <img
                 class="gallery__img"
-                src="./images/mac_pc.jpg"
+                srcset="./images/mac_pc@1х.jpg 1x, ./images/mac_pc@2x.jpg 2x"
+                src="./images/mac_pc@1x.jpg"
                 alt="Макбука аксесуари"
                 width="370"
               />
@@ -196,28 +197,41 @@
               </div>
             </li>
             <li class="gallery__item">
-              <img class="gallery__img" src="./images/phone.jpg" alt="Смартфон" width="370" />
+              <img
+                class="gallery__img"
+                srcset="./images/phone@1х.jpg 1x, ./images/phone@2x.jpg 2x"
+                src="./images/phone@1x.jpg"
+                alt="Смартфон"
+                width="370"
+              />
               <div class="gallery__overlay">
                 <p class="gallery__text">мобільні додатки</p>
               </div>
             </li>
             <li class="gallery__item">
-              <img class="gallery__img" src="./images/tablet.jpg" alt="Планшет" width="370" />
+              <img
+                class="gallery__img"
+                srcset="./images/tablet@1х.jpg 1x, ./images/tablet@2x.jpg 2x"
+                src="./images/tablet@1x.jpg"
+                alt="Планшет"
+                width="370"
+              />
               <div class="gallery__overlay">
                 <p class="gallery__text">дизайнерські рішення</p>
               </div>
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="staff section">
+      </section>
+      <section class="staff section">
         <div class="container">
           <h2 class="staff__title section__title">Hаша команда</h2>
           <ul class="users">
             <li class="user">
               <img
                 class="user__img"
-                src="./images/product_designer.jpg"
+                srcset="./images/product_designer@1х.jpg 1x, ./images/product_designer@2x.jpg 2x"
+                src="./images/product_designer@1x.jpg"
                 alt="Усміхнений дизайнер"
                 width="270"
               />
@@ -259,7 +273,8 @@
             <li class="user">
               <img
                 class="user__img"
-                src="./images/frontend_dev.jpg"
+                srcset="./images/frontend_dev@1х.jpg 1x, ./images/frontend_dev@2x.jpg 2x"
+                src="./images/frontend_dev@1x.jpg"
                 alt="Виспаний фронтендер"
                 width="270"
               />
@@ -301,7 +316,8 @@
             <li class="user">
               <img
                 class="user__img"
-                src="./images/marketing.jpg"
+                srcset="./images/marketing@1х.jpg 1x, ./images/marketing@2x.jpg 2x"
+                src="./images/marketing@1x.jpg"
                 alt="Наіграний маркетолог"
                 width="270"
               />
@@ -343,7 +359,8 @@
             <li class="user">
               <img
                 class="user__img"
-                src="./images/ui_designer.jpg"
+                srcset="./images/ui_designer@1х.jpg 1x, ./images/ui_designer@2x.jpg 2x"
+                src="./images/ui_designer@1x.jpg"
                 alt="Самозакозаний дизайнер"
                 width="270"
               />
@@ -384,8 +401,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="section">
+      </section>
+      <section class="section">
         <div class="container">
           <h2 class="section__title">Постійні клієнти</h2>
           <ul class="clients">
@@ -433,11 +450,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__mainlink">
+        <div class="footer__mainlink footer__container--item">
           <a class="footer__logo" href="./index.html"
             ><span class="footer__logo--difcol">Web</span>Studio</a
           >
@@ -464,7 +481,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer__sosials">
+        <div class="footer__sosials footer__container--item">
           <p class="footer__sosials--title">Приєднуйтесь</p>
           <ul class="user__socials">
             <li class="user__soc">
@@ -497,7 +514,7 @@
             </li>
           </ul>
         </div>
-        <form action="./" class="footer-form">
+        <form action="./" class="footer-form footer__container--item">
           <p class="footer-form__title">Підпишіться на розсилку</p>
 
           <input
@@ -515,7 +532,7 @@
           </button>
         </form>
       </div>
-    </footer> -->
+    </footer>
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg class="menu-toggle__icon--close">

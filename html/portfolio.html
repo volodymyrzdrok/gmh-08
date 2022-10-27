@@ -90,7 +90,11 @@
             <li class="portfolio__item">
               <div class="portfolio__box">
                 <img
-                  src="../images/portf_img/1_technocriak.jpg"
+                  srcset="
+                    ../images/portf_img/1_technocriak@1x.jpg 1x,
+                    ../images/portf_img/1_technocriak@2x.jpg 2x
+                  "
+                  src="../images/portf_img/1_technocriak@1x.jpg"
                   alt="Приклад Веб-сайту"
                   class="portfolio__img"
                   width="370"
@@ -111,7 +115,11 @@
             <li class="portfolio__item">
               <div class="portfolio__box">
                 <img
-                  src="../images/portf_img/2_poster.jpg"
+                  srcset="
+                    ../images/portf_img/2_poster@1x.jpg 1x,
+                    ../images/portf_img/2_poster@2x.jpg 2x
+                  "
+                  src="../images/portf_img/2_poster@1x.jpg"
                   alt="Приклад постера"
                   class="portfolio__img"
                   width="370"
@@ -132,7 +140,11 @@
             <li class="portfolio__item">
               <div class="portfolio__box">
                 <img
-                  src="../images/portf_img/3_restaurant.jpg"
+                  srcset="
+                    ../images/portf_img/3_restaurant@1x.jpg 1x,
+                    ../images/portf_img/3_restaurant@2x.jpg 2x
+                  "
+                  src="../images/portf_img/3_restaurant@1x.jpg"
                   alt="Дизайн ресторану"
                   class="portfolio__img"
                   width="370"
@@ -153,7 +165,11 @@
             <li class="portfolio__item">
               <div class="portfolio__box">
                 <img
-                  src="../images/portf_img/4_headphones.jpg"
+                  srcset="
+                    ../images/portf_img/4_headphones@1x.jpg 1x,
+                    ../images/portf_img/4_headphones@2x.jpg 2x
+                  "
+                  src="../images/portf_img/4_headphones@1x.jpg"
                   alt="Маркетинг наушників"
                   class="portfolio__img"
                   width="370"
@@ -174,7 +190,11 @@
             <li class="portfolio__item">
               <div class="portfolio__box">
                 <img
-                  src="../images/portf_img/5_boxes.jpg"
+                  srcset="
+                    ../images/portf_img/5_boxes@1x.jpg 1x,
+                    ../images/portf_img/5_boxes@2x.jpg 2x
+                  "
+                  src="../images/portf_img/5_boxes@1x.jpg"
                   alt="Нова пошта Маркетинг"
                   class="portfolio__img"
                   width="370"
@@ -195,7 +215,11 @@
             <li class="portfolio__item">
               <div class="portfolio__box">
                 <img
-                  src="../images/portf_img/6_macpro.jpg"
+                  srcset="
+                    ../images/portf_img/6_macpro@1x.jpg 1x,
+                    ../images/portf_img/6_macpro@2x.jpg 2x
+                  "
+                  src="../images/portf_img/6_macpro@1x.jpg"
                   alt="Приклад вебсайту на макбуці"
                   class="portfolio__img"
                   width="370"
@@ -216,7 +240,11 @@
             <li class="portfolio__item">
               <div class="portfolio__box">
                 <img
-                  src="../images/portf_img/7_magazine.jpg"
+                  srcset="
+                    ../images/portf_img/7_magazine@1x.jpg 1x,
+                    ../images/portf_img/7_magazine@2x.jpg 2x
+                  "
+                  src="../images/portf_img/7_magazine@1x.jpg"
                   alt="дизайн журналу"
                   class="portfolio__img"
                   width="370"
@@ -237,7 +265,8 @@
             <li class="portfolio__item">
               <div class="portfolio__box">
                 <img
-                  src="../images/portf_img/8_lab.jpg"
+                  srcset="../images/portf_img/8_lab@1x.jpg 1x, ../images/portf_img/8_lab@2x.jpg 2x"
+                  src="../images/portf_img/8_lab@1x.jpg"
                   alt="Маркетинг плажки"
                   class="portfolio__img"
                   width="370"
@@ -258,7 +287,11 @@
             <li class="portfolio__item">
               <div class="portfolio__box">
                 <img
-                  src="../images/portf_img/9_laptop.jpg"
+                  srcset="
+                    ../images/portf_img/9_laptop@1x.jpg 1x,
+                    ../images/portf_img/9_laptop@2x.jpg 2x
+                  "
+                  src="../images/portf_img/9_laptop@1x.jpg"
                   alt="приклад дизайну на макбуці"
                   class="portfolio__img"
                   width="370"
@@ -282,8 +315,8 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__mainlink">
-          <a class="footer__logo" href="./index.html"
+        <div class="footer__mainlink footer__container--item">
+          <a class="footer__logo" href="../index.html"
             ><span class="footer__logo--difcol">Web</span>Studio</a
           >
 
@@ -309,7 +342,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer__sosials">
+        <div class="footer__sosials footer__container--item">
           <p class="footer__sosials--title">Приєднуйтесь</p>
           <ul class="user__socials">
             <li class="user__soc">
@@ -342,7 +375,7 @@
             </li>
           </ul>
         </div>
-        <form action="./" class="footer-form">
+        <form action="./" class="footer-form footer__container--item">
           <p class="footer-form__title">Підпишіться на розсилку</p>
 
           <input
@@ -355,7 +388,7 @@
           <button class="footer-form__btn" type="submit">
             Підписатись
             <svg class="footer-form__btn--icon">
-              <use href="../images/icons.svg#icon-telegram"></use>
+              <use href="./images/icons.svg#icon-telegram"></use>
             </svg>
           </button>
         </form>

@@ -1,125 +1,165 @@
 .footer {
-   padding: 60px 0;
-   background: #2f303a;
+  padding: 60px 0;
+  background: #2f303a;
+  @media (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer__container {
- @include centeredFlex(flex,null,flex-start)
+  @media (min-width: 768px) {
+    @include centeredFlex(flex, null, flex-start);
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    @include centeredFlex(flex, center, null);
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+}
+.footer__container--item {
+  @media (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc((100% - 60px) / 2);
+  }
 }
 
 .footer__mainlink {
-   margin-right: 90px;
+  @media (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media (min-width: 1200px) {
+    margin-right: 90px;
+  }
 }
 
 .footer__logo {
- @include logoCommons($bc-color);
-   display: inline-block;
-   margin-bottom: 20px;
+  @include logoCommons($bc-color);
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .footer__logo--difcol {
-   color: #188ce8;
+  color: #188ce8;
 }
 
-.footer-contacts {}
+.footer-contacts {
+}
 
 .footer-contacts__item {
-   margin-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .footer-contacts__item:first-child .footer-contacts__link {
-   line-height: calc(24 / 14);
-   font-style: normal;
-   letter-spacing: 0.03em;
-   text-decoration: none;
-   color: $bc-color;
+  line-height: calc(24 / 14);
+  font-style: normal;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: $bc-color;
 }
 
 .footer-contacts__link {
-   font-style: normal;
-   line-height: calc(16 / 14);
-   letter-spacing: 0.02em;
-   color: rgba(255, 255, 255, 0.6);
-   transition: color $animation;
+  font-style: normal;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color $animation;
 
-&:hover,
-&:focus {
-         color: $focus-color;
-      }
+  &:hover,
+  &:focus {
+    color: $focus-color;
+  }
 }
 
-
-
 .footer__sosials {
-   padding-top: 9px;
-   margin-right: 93px;
+  @media (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 9px;
+    margin-right: 93px;
+  }
 }
 
 .footer__soc--link {
-   background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer__soc--icon {
-   fill: $bc-color;
+  fill: $bc-color;
 }
 
 .footer__sosials--title {
-   line-height: 1.2;
-   letter-spacing: 0.03em;
-   text-transform: uppercase;
-   margin-bottom: 20px;
-   color: $bc-color;
-   font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: $bc-color;
+  font-weight: 700;
 }
 
 .footer-form {
-   padding-top: 9px;
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 9px;
+  }
 }
 
 .footer-form__title {
-   line-height: 1.2;
-   letter-spacing: 0.03em;
-   text-transform: uppercase;
-   margin-bottom: 20px;
-   color: $bc-color;
-   font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: $bc-color;
+  font-weight: 700;
 }
 
 .footer-form__input {
-   width: 358px;
-   height: 50px;
-   background-color: #2f303a;
-   border: 1px solid rgba(255, 255, 255, 0.3);
-   border-radius: 4px;
-   outline: none;
-   padding-left: 16px;
-   color: $bc-color;
-   margin-right: 10px;
+  width: 100%;
+  height: 50px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  outline: none;
+  padding-left: 16px;
+  color: $bc-color;
 
-   &::placeholder {
-         color: rgba(255, 255, 255, 0.6);
-      }
+  @media (min-width: 768px) {
+    width: 450px;
+  }
+  @media (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+  @media (min-width: 1200px) {
+    width: 358px;
+    margin-right: 10px;
+  }
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
-.footer-form__btn {}
+.footer-form__btn {
+}
 
 .footer-form__btn {
-@include centeredFlex(inline-flex,center,center);
-width: 200px;
-@include buttuns();
-   margin: 0 auto;  
+  @include centeredFlex(inline-flex, center, center);
+  width: 200px;
+  @include buttuns();
+  margin: 0 auto;
 
-&:hover,
-   &:focus {
-         background-color: $focus-color;
-         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-      }
-
+  &:hover,
+  &:focus {
+    background-color: $focus-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .footer-form__btn--icon {
-   width: 24px;
-   height: 24px;
-   fill: $bc-color;
-   margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: $bc-color;
+  margin-left: 10px;
 }

@@ -1,102 +1,131 @@
-.portfolio {}
-
-.portf-but__list {
-   @include centeredFlex(flex,center,null);
-   margin-bottom: 50px;
+.portfolio {
 }
 
-.portf-but__item {}
+.portf-but__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    @include centeredFlex(flex, center, null);
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.portf-but__item {
+  @media (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+}
 
 .portf-but__item:not(:last-child) {
-   margin-right: 8px;
+  margin-right: 8px;
 }
 
 .portf-but__button {
-   padding-left: 25px;
-   padding-right: 25px;
-   height: 38px;
-   font-size: 16px;
-   line-height: calc(26 / 16);
-   letter-spacing: 0.03em;
-   background-color: #f5f4fa;
-   border: none;
-   border-radius: 4px;
-   cursor: pointer;
-   font-family: inherit;
-   font-weight: 500;
-   transition: background-color $animation, color $animation, box-shadow $animation;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 38px;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  transition: background-color $animation, color $animation, box-shadow $animation;
 
- &:hover,
-    &:focus {
-         background-color: $focus-color;
-         color: $bc-color;
-         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-      }
+  &:hover,
+  &:focus {
+    background-color: $focus-color;
+    color: $bc-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
 
-
 .portfolio__list {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 30px;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .portfolio__item {
-   flex-basis: calc((100% - 60px) / 3);
-   transition: box-shadow $animation;
+  @media (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @media (min-width: 1200px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  transition: box-shadow $animation;
 
   &:hover {
-         cursor: pointer;
-         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      }
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 }
 
 .portfolio__box {
-   position: relative;
-   overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
-.portfolio__img {}
+.portfolio__img {
+  width: 100%;
+}
 
 .portfolio__overlay {
-   position: absolute;
-   height: 100%;
-   width: 100%;
-   top: 0;
-   left: 0;
-   background-color: rgba(33, 150, 243, 0.9);
-   padding: 63px 24px 0 24px;
-   transform: translatey(100%);
-   transition: transform $animation;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px 0 24px;
+  transform: translatey(100%);
+  transition: transform $animation;
 
-   .portfolio__item:hover & {
-         transform: translatey(0);
-      }
+  .portfolio__item:hover & {
+    transform: translatey(0);
+  }
 }
 
 .portfolio__overlay--desc {
-   font-size: 18px;
-   line-height: calc(28 / 18);
-   letter-spacing: 0.03em;
-   color: $bc-color;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  letter-spacing: 0.03em;
+  color: $bc-color;
 }
 
 .portfolio__desc {
-   padding: 20px 24px;
-   border: 1px solid;
-   border-color: transparent #eeeeee #eeeeee #eeeeee;
+  padding: 20px 24px;
+  border: 1px solid;
+  border-color: transparent #eeeeee #eeeeee #eeeeee;
 }
 
 .portfolio__title {
-   font-size: 18px;
-   line-height: calc(36 / 18);
-   letter-spacing: 0.06em;
-   margin-bottom: 4px;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .portfolio__subtitle {
-   font-size: 16px;
-   line-height: calc(30 / 16);
-   letter-spacing: 0.03em;
-   color: $additional-color;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: $additional-color;
 }

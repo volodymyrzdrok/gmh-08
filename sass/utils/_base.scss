@@ -1,9 +1,6 @@
-// Верстка виконана щодо трьох точок перелому: 480px,
-// 768px і 1200px.
 body {
   font-size: 14px;
   background-color: $bc-color;
-
   font-family: 'Roboto', sans-serif;
   color: $main-color;
 }
@@ -27,10 +24,11 @@ a {
 
 .container {
   outline: 1px solid tomato;
-  // width: 480px;
   margin: 0 auto;
   padding: 0 15px;
-
+  @media (max-width: 479px) {
+    max-width: 480px;
+  }
   @media (min-width: 480px) {
     width: 480px;
   }
@@ -56,15 +54,12 @@ p {
 }
 
 .section {
-  @media (min-width: 480px) {
-  }
-
-  @media (min-width: 768px) {
+  @media (max-width: 1199px) {
+    padding: 60px 0;
   }
 
   @media (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 94px 0;
   }
 }
 
