@@ -85,13 +85,14 @@
 
 .portfolio__img {
   width: 100%;
+  height: auto;
 }
 
 .portfolio__overlay {
   position: absolute;
   height: 100%;
   width: 100%;
-  top: 0;
+  top: 1;
   left: 0;
   background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px 0 24px;
@@ -115,7 +116,11 @@
   border: 1px solid;
   border-color: transparent #eeeeee #eeeeee #eeeeee;
 }
-
+.portfolio__desc--custom {
+  @media (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 56px;
+  }
+}
 .portfolio__title {
   font-size: 18px;
   line-height: calc(36 / 18);

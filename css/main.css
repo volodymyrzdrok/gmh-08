@@ -1255,13 +1255,14 @@ p {
 
 .portfolio__img {
   width: 100%;
+  height: auto;
 }
 
 .portfolio__overlay {
   position: absolute;
   height: 100%;
   width: 100%;
-  top: 0;
+  top: 1;
   left: 0;
   background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px 0 24px;
@@ -1288,6 +1289,12 @@ p {
   padding: 20px 24px;
   border: 1px solid;
   border-color: transparent #eeeeee #eeeeee #eeeeee;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__desc--custom {
+    padding-bottom: 56px;
+  }
 }
 
 .portfolio__title {
