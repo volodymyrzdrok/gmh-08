@@ -20,12 +20,16 @@
 
 .modal__box {
   position: relative;
-  max-width: 450px;
+
   background-color: $bc-color;
   border-radius: 4px;
   transform: scale(1);
   transition: transform $animation;
   padding: 40px;
+  @media (max-width: 1199px) {
+    max-width: 450px;
+  }
+
   @media (min-width: 1200px) {
     width: 528px;
   }
