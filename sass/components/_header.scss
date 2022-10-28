@@ -1,17 +1,11 @@
 .header {
   border-bottom: #eeeeee 1px solid;
 
-  @media (min-width: 480px) {
-  }
-
   @media (max-width: 767px) {
     padding: 10px 0;
   }
   @media (min-width: 768px) {
     display: flex;
-  }
-
-  @media (min-width: 1200px) {
   }
 }
 
@@ -50,9 +44,6 @@
   }
 }
 
-.nav-list__item {
-}
-
 .nav-list__item:not(:last-child) {
   @media (max-width: 767px) {
     margin-bottom: 32px;
@@ -78,12 +69,12 @@
   @media (min-width: 768px) {
     padding: 32px 0px;
   }
-}
 
-.nav-list__link:hover,
-.nav-list__link:focus,
-.nav-list__link.current {
-  color: $focus-color;
+  &:hover,
+  &:focus,
+  &.current {
+    color: $focus-color;
+  }
 }
 
 .nav-list__link.current::after {
@@ -104,9 +95,6 @@
   @media (min-width: 1200px) {
     display: flex;
   }
-}
-
-.contacts__item {
 }
 
 .contacts__item:not(:last-child) {
@@ -184,12 +172,12 @@
   width: 40px;
   height: 40px;
   transition: transform $animation, fill $animation;
-}
 
-.menu-toggle:hover .menu-toggle__icon--toggle,
-.menu-toggle:focus .menu-toggle__icon--toggle {
-  transform: scale(1.1);
-  fill: $focus-color;
+  .menu-toggle:hover &,
+  .menu-toggle:focus & {
+    transform: scale(1.01);
+    fill: $focus-color;
+  }
 }
 
 .menu-container {
@@ -203,7 +191,7 @@
   height: 100vh;
   background-color: $bc-color;
   z-index: 999;
-  padding: 48px 40px 78px 40px;
+  padding: 48px 40px 84px 40px;
 
   transform: translateY(-100%);
   transition: transform $animation;
@@ -228,10 +216,11 @@
   width: 40px;
   height: 40px;
   transition: fill $animation;
-}
-.menu-toggle:hover .menu-toggle__icon--close,
-.menu-toggle:focus .menu-toggle__icon--close {
-  fill: $focus-color;
+
+  .menu-toggle:hover &,
+  .menu-toggle:focus & {
+    fill: $focus-color;
+  }
 }
 
 .contacts__mob {
@@ -250,7 +239,9 @@
     display: none;
   }
 }
-.socials__item {
+
+.socials__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 .socials__link {
   display: inline-block;
@@ -261,8 +252,4 @@
   padding-right: 10px;
   padding-left: 10px;
   color: $focus-color;
-}
-
-.socials__item:not(:last-child) {
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }

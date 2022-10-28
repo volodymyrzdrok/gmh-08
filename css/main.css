@@ -114,6 +114,7 @@ p {
     display: flex;
   }
 }
+
 @media (min-width: 768px) {
   .header__cont {
     display: -webkit-box;
@@ -218,10 +219,7 @@ p {
     padding: 32px 0px;
   }
 }
-
-.nav-list__link:hover,
-.nav-list__link:focus,
-.nav-list__link.current {
+.nav-list__link:hover, .nav-list__link:focus, .nav-list__link.current {
   color: #2196f3;
 }
 
@@ -342,11 +340,9 @@ p {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.menu-toggle:hover .menu-toggle__icon--toggle,
-.menu-toggle:focus .menu-toggle__icon--toggle {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.menu-toggle:hover .menu-toggle__icon--toggle, .menu-toggle:focus .menu-toggle__icon--toggle {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
   fill: #2196f3;
 }
 
@@ -368,7 +364,7 @@ p {
   height: 100vh;
   background-color: #fff;
   z-index: 999;
-  padding: 48px 40px 78px 40px;
+  padding: 48px 40px 84px 40px;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -399,9 +395,7 @@ p {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.menu-toggle:hover .menu-toggle__icon--close,
-.menu-toggle:focus .menu-toggle__icon--close {
+.menu-toggle:hover .menu-toggle__icon--close, .menu-toggle:focus .menu-toggle__icon--close {
   fill: #2196f3;
 }
 
@@ -433,6 +427,10 @@ p {
   }
 }
 
+.socials__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
 .socials__link {
   display: inline-block;
   font-weight: 500;
@@ -442,10 +440,6 @@ p {
   padding-right: 10px;
   padding-left: 10px;
   color: #2196f3;
-}
-
-.socials__item:not(:last-child) {
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .modal {
@@ -761,9 +755,7 @@ p {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0 auto;
 }
-
-.form__btn:hover,
-.form__btn:focus {
+.form__btn:hover, .form__btn:focus {
   background-color: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1199,7 +1191,6 @@ p {
     margin-bottom: 15px;
   }
 }
-
 .portf-but__item:not(:last-child) {
   margin-right: 8px;
 }

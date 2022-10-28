@@ -4,9 +4,6 @@
   }
 }
 
-.gallery__title {
-}
-
 .gallery__list {
   display: flex;
   flex-wrap: wrap;
@@ -33,7 +30,4 @@
   text-transform: uppercase;
   font-weight: 700;
   color: $bc-color;
-}
-
-.gallery__img {
 }

@@ -1,6 +1,3 @@
-.portfolio {
-}
-
 .portf-but__list {
   display: flex;
   flex-wrap: wrap;
@@ -20,10 +17,10 @@
   @media (max-width: 767px) {
     margin-bottom: 15px;
   }
-}
 
-.portf-but__item:not(:last-child) {
-  margin-right: 8px;
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .portf-but__button {

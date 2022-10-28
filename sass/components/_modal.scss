@@ -213,10 +213,10 @@
   width: 200px;
   @include buttuns();
   margin: 0 auto;
-}
 
-.form__btn:hover,
-.form__btn:focus {
-  background-color: $focus-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    background-color: $focus-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
