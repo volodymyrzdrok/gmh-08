@@ -368,7 +368,7 @@ p {
   height: 100vh;
   background-color: #fff;
   z-index: 999;
-  padding: 48px 40px;
+  padding: 48px 40px 78px 40px;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -480,6 +480,7 @@ p {
 
 .modal__box {
   position: relative;
+  overflow: scroll;
   background-color: #fff;
   border-radius: 4px;
   -webkit-transform: scale(1);
@@ -663,6 +664,8 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media (max-width: 1199px) {
   .form__policy {
@@ -723,6 +726,11 @@ p {
   color: #2196f3;
   text-decoration: underline;
   margin-left: 2px;
+}
+@media (max-width: 444px) {
+  .form__policy--link {
+    margin: 0 auto;
+  }
 }
 @media (min-width: 1199px) {
   .form__policy--link {
@@ -809,9 +817,8 @@ p {
 }
 
 .banner__title {
-  font-size: 26px;
-  line-height: 1.6153846154;
-  width: 360px;
+  font-size: 21px;
+  line-height: 1.1;
   margin: 0 auto;
   font-weight: 900;
   letter-spacing: 0.06em;
@@ -819,7 +826,18 @@ p {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-@media (min-width: 1199px) {
+@media (min-width: 480px) {
+  .banner__title {
+    font-size: 26px;
+    line-height: 1.6153846154;
+  }
+}
+@media (max-width: 1199px) {
+  .banner__title {
+    max-width: 360px;
+  }
+}
+@media (min-width: 1200px) {
   .banner__title {
     width: 696px;
     font-size: 44px;
