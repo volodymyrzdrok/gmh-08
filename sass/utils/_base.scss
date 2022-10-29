@@ -3,6 +3,10 @@ body {
   background-color: $bc-color;
   font-family: 'Roboto', sans-serif;
   color: $main-color;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 ul {

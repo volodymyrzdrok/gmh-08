@@ -8,9 +8,9 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity $animation;
-  overflow: hidden;
   overflow-y: scroll;
 }
+
 
 .modal.is-hidden {
   opacity: 0;
