@@ -192,9 +192,9 @@
   background-color: $bc-color;
   z-index: 999;
   padding: 48px 40px 84px 40px;
-
-  transform: translateY(-100%);
-  transition: transform $animation;
+  opacity: 0;
+  transform: translate(100%, -100%);
+  transition: transform $animation, opacity $animation;
 
   @media (min-width: 768px) {
     &* {
@@ -204,7 +204,8 @@
 }
 
 .menu-container.is-open {
-  transform: translateY(0);
+  opacity: 1;
+  transform: translate(0%, 0%);
 }
 
 .menu-container .menu-toggle {
