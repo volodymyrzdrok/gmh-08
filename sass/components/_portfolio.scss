@@ -67,6 +67,7 @@
   @media (min-width: 1200px) {
     flex-basis: calc((100% - 60px) / 3);
   }
+
   transition: box-shadow $animation;
 
   &:hover {
@@ -88,7 +89,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  top: 1;
+  top: 1px;
   left: 0;
   background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px 0 24px;
@@ -96,7 +97,7 @@
   transition: transform $animation;
 
   .portfolio__item:hover & {
-    transform: translatey(0);
+    transform: translatey(0%);
   }
 }
 

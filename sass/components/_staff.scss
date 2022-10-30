@@ -70,7 +70,8 @@
   height: 44px;
   transition: background-color $animation;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $focus-color;
   }
 }
@@ -81,7 +82,8 @@
   fill: $icon-color;
   transition: fill $animation;
 
-  .user__soc--link:hover & {
+  .user__soc--link:hover &,
+  .user__soc--link:focus & {
     fill: $bc-color;
   }
 }

@@ -23,7 +23,8 @@
   border-radius: 4px;
   transition: border-color $animation;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-color: $focus-color;
   }
 }
@@ -34,7 +35,8 @@
   fill: $icon-color;
   transition: fill $animation;
 
-  .clients__link:hover & {
+  .clients__link:hover &,
+  .clients__link:focus & {
     fill: $focus-color;
   }
 }
